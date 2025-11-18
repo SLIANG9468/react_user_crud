@@ -1,0 +1,30 @@
+.register-mechanic-view {
+  background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
+  padding: 20px 0 80px;
+}
+
+.error-message {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 15px 20px;
+  background-color: #D32F2F;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+}
+
+.success-message {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 15px 20px;
+  background-color: #FBC02D;
+  color: #333333;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(251, 192, 45, 0.3);
+}

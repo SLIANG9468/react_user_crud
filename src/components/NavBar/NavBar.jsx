@@ -6,11 +6,13 @@ const NavBar = () => {
 
     return (
         <header>
-            <nav style={{display:'flex', justifyContent: 'space-between', padding:'2vs'}}>
+            <nav>
                 <h1> Mechanic App</h1>
-                <ul style={{display:'flex', width:'40vw', justifyContent:'space-between', alignItems:'center'}}>
-                    <li className="navLink">Log In</li>
-                    <li className="navLink">Sign Up</li>
+                <ul>
+                    <NavLink className={'navLink'} to='/'>Home</NavLink>
+                    <NavLink className={'navLink'} to='/login'> Login</NavLink>
+                    <NavLink className={'navLink'} to='/register'> Register</NavLink>
+
                 </ul>
             </nav>
         </header>

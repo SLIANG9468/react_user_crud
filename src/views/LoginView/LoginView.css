@@ -1,0 +1,119 @@
+.login-view {
+  background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
+  padding: 60px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.login-form-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+}
+
+.login-form-container h2 {
+  text-align: center;
+  color: #D32F2F;
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form .form-group label {
+  font-weight: 600;
+  color: #333333;
+  font-size: 1.3rem;
+}
+
+.login-form .form-group input {
+  padding: 16px;
+  border: 2px solid #BDBDBD;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.login-form .form-group input:focus {
+  outline: none;
+  border-color: #D32F2F;
+}
+
+.login-form .form-group input::placeholder {
+  color: #BDBDBD;
+}
+
+.login-form .submit-button {
+  padding: 18px 40px;
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.login-form .submit-button:hover {
+  background-color: #B71C1C;
+}
+
+.login-form .submit-button:active {
+  transform: scale(0.98);
+}
+
+.error-message {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 18px 24px;
+  background-color: #D32F2F;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-form-container {
+    padding: 40px 30px;
+  }
+
+  .login-form-container h2 {
+    font-size: 2.5rem;
+  }
+  
+  .login-form .form-group label {
+    font-size: 1.2rem;
+  }
+  
+  .login-form .form-group input {
+    font-size: 1.2rem;
+  }
+  
+  .login-form .submit-button {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,145 @@
+.Mechanic-form-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Mechanic-form-container h2 {
+  text-align: center;
+  color: #D32F2F;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.Mechanic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333333;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 2px solid #BDBDBD;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #D32F2F;
+}
+
+.form-group input::placeholder {
+  color: #BDBDBD;
+}
+
+.waiver-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  border: 2px solid #BDBDBD;
+  border-radius: 8px;
+}
+
+.waiver-section h3 {
+  color: #D32F2F;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.waiver-text {
+  font-size: 1.2rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-left: 4px solid #FBC02D;
+  border-radius: 4px;
+}
+
+.waiver-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.waiver-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #D32F2F;
+}
+
+.waiver-checkbox label {
+  font-size: 1.1rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.submit-button {
+  padding: 15px 30px;
+  background-color: #D32F2F;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #B71C1C;
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Mechanic-form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Mechanic-form-container h2 {
+    font-size: 1.5rem;
+  }
+}
